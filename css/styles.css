@@ -162,6 +162,7 @@ img {
   align-items: center;
   margin-left: auto;
 }
+
 .contact-item:nth-child(2n) {
   margin-left: 30px;
 }
@@ -169,11 +170,11 @@ img {
 .icon-contact {
   margin-right: 10px;
   fill: currentColor;
-  vertical-align: middle;
 }
 
 .contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -369,6 +370,7 @@ img {
   margin-bottom: 9px;
 }
 .footer-link {
+  font-style: normal;
   color: var(--footerColor);
 }
 .footer-link:hover,
