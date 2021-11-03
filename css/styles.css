@@ -414,6 +414,56 @@ img {
 	fill: currentColor;
 }
 
+/* ========Modal======== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--lightBgColor);
+  border-radius: 4px;
+}
+
+.modal-icon {
+  fill: currentColor;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--lightBgColor);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-btn:hover .modal-icon {
+  fill: var(--hoverBtnColor);
+}
+
+
 /* ========Portfolio page======== */
 
 /* ========Filter button======== */
