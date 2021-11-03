@@ -15,6 +15,7 @@
   --logoColorLight: #ffffff;
   --darkBgColor: #2f303a;
   --footerColor: rgba(255, 255, 255, 0.6);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -127,12 +128,12 @@ img {
   margin-bottom: 20px;
   color: var(--logoColorLight);
 }
-.logo:hover > .logo-light,
+/* .logo:hover > .logo-light,
 .logo:focus > .logo-light,
 .logo:hover > .logo-darck,
 .logo:focus > .logo-darck {
   color: var(--accentColor);
-}
+} */
 
 /* ========Navigation======== */
 .nav-list {
@@ -293,8 +294,30 @@ img {
 .work-list {
   display: flex;
 }
+.work-item {
+  position: relative;
+}
 .work-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.work-content {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--lightColor);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* ========Team section======== */
